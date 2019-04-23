@@ -1,0 +1,72 @@
+.button {
+    background-color: #C5F9D3;
+    border: none;
+    color:darkcyan;
+    padding: 15px;
+	width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+.littleButton{
+	background-color: #C5F9D3;
+	border: none;
+	color:darkcyan;
+	padding: 15px;
+	width: 60px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+}
+#bar { 
+    width: 600px; height: 10px; 
+	margin-left: 550px;
+	margin-top: 25px;
+	margin-bottom: 30px;
+    display: flex; 
+} 
+#bar .progress { 
+	margin-left: 10px;margin-right: 10px;
+    width: 50%; height: 6px; border-radius: 3px; 
+    background: #F1F5FD; 
+}
+#bar .progress .progressBar { 
+    width: 0%; height: 100%; border-radius: 3px; 
+    background: #0072FF; 
+}
+#bar .progress .progressBar .progressThumb { 
+    width: 14px; height: 14px; border-radius: 50%; 
+    background: #FFFFFF; box-shadow: 0 0 15px 5px #0072FF; 
+    float: right; 
+    position: relative; left: 7px; top: -5px; 
+}
+#list{
+	width: 600px; height: 10px; 
+	margin-left: 600px;
+	display: flex; 
+}
+
+#list.song-list {
+  position: absolute;
+  z-index: 5;
+  color: #fff;
+  background: #ad857e;
+  padding: 5px;
+  top: 30%;
+  left: 10%;
+  border-radius: 5px;
+}
+.song-item {
+  list-style: none;
+  padding: 5px 15px;
+  transition: all .3s;
+  cursor: pointer;
+}
+.song-item span {
+  margin-left: 5px;
+}
+.song-item:hover {
+  background: #FAE4FB;
+}

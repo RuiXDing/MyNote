@@ -90,6 +90,7 @@ for (var p in obj) {
 var Animal=function(){
     'use strict';
     this.name="animal";  //这里反而必须用等号了 emm，之前的键值对表示还必须用冒号嘞
+    this.age=0;
 }
 //2.new
 //new相当于是对构造函数的执行，并返回一个由构造函数指定类型的对象
@@ -158,6 +159,7 @@ console.log(animal1.constructor);  //function(){ … }
  * 例如，animal1的__proto__就是Animal.prototype
  */
 console.log(animal1.__proto__===Animal.prototype);//true
+console.log(animal1.__proto__.name);
 /**
  * 既然每个对象都有__proto__属性，那么原型对象也有呀，这就以__proto__为联系形成了一条链状结构
  * 那么链的尽头呢
@@ -191,3 +193,9 @@ Dog.prototype.constructor=Dog;                 //修改constructor使得Dog.prot
  * 本质仍是原型，类的数据类型就是函数，类本身就指向构造函数，
  * 类的所有方法都定义在类的prototype属性上面。
  */
+var test_obj={
+    x:5
+}
+console.log(test_obj.__proto__); //Object的原型对象
+console.log(test_obj.__proto__ instanceof Object); //false
+console.log(test_obj.constructor); //ƒ Object() { [native code] }

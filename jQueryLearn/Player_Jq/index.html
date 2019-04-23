@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Music Player</title>
+		<link href="css/mycss.css" rel="stylesheet" type="text/css">
+	</head>
+	<!-- 导入Jq文件 -->
+	<script type="text/javascript" src="js/JQuery3.4.0.js"></script>
+	<body bgcolor="#81D4FA">
+		<div align="center">
+			<canvas id="canvas" width="1020" height="300"></canvas>
+		</div>
+		<br>
+		<p id="musicInformation" align="center"></p>
+		<br>
+		<div id="bar">
+			<span id="currentT">00:00</span>
+			<div class="progress">
+				<div class="progressBar">
+					<div class="progressThumb"></div>
+				</div>
+			</div>
+			<span id="time">00:00</span>
+		</div>
+
+		<div align="center">
+			<button class="button" id="stop" >stop</button>
+			<button class="button" id="pre" ><img src="img/01.png" width="26px" height="15px"></button>
+			<button class="button" id="play" >play</button>
+			<button class="button" id="next" ><img src="img/02.png" width="26px" height="15px"></button>
+			<button class="littleButton" id="volumeUp" >+</button>
+			<button class="littleButton" id="volumeDown" >-</button>
+		</div>
+		<div id="list">
+			<ul class="song-list">
+				<li id="song0" class="song-item">
+					<!-- <i class="fas fa-music"></i> -->
+					<span >ひらひら ひらら</span>
+				</li>
+				<li id="song1" class="song-item">
+					<!-- <i class="fas fa-music"></i> -->
+					<span >旅程</span>
+				</li>
+				<li id="song2" class="song-item">
+					<!-- <i class="fas fa-music"></i> -->
+					<span >牵丝戏</span>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/player.js"></script>
+</html>
