@@ -1,5 +1,5 @@
 ###Jquery实践
-试着用Jquery把之前写的播放器重写了一下，用JQuery语法替换了之前的一些js语句  
+试着用Jquery把之前写的播放器重写了一下，用JQuery语法替换了之前的一些js语句（详见player.js）  
 其中用到的Jquery知识：
 + Jquery是围绕Jquery对象使用的，$()是jQuery的构造函数
 + 基础语法`$(selector).action()`，选择符（selector）"查询"和"查找" HTML 元素,jQuery 的 action() 执行对元素的操作
